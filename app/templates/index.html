@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Civic Data Challenge</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>Welcome to the Civic Data Challenge</h1>
+  <form action="{{ url_for('crime_summary') }}" method="post">
+    <label for="location">Enter a location:</label>
+    <input type="text" id="location" name="location" required>
+    <button type="submit">Generate Summary</button>
+  </form>
+  <div>
+    <h2>Crime Map</h2>
+    <iframe src="{{ url_for('static', filename='crime_map.html') }}" width="100%" height="600"></iframe>
+  </div>
+</body>
+
+</html>
