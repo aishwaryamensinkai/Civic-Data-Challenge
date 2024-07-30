@@ -1,6 +1,6 @@
-Flask
+flask
 pandas
-folium
-openai
 matplotlib
-geopy
+seaborn
+python-dotenv
+openai

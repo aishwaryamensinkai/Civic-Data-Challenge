@@ -1,13 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
 }
 
-h1,
-h2 {
-  color: #333;
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
 }
 
 form {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
